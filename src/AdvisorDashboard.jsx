@@ -29,6 +29,8 @@ import AdvClProfile from "./ClientScreens/AdvisersClientView/AdvClProfile";
 import PlanView from "./ClientScreens/Plans/PlanView";
 import MultiStepForm from "./ClientScreens/FirstForm/MultiStepForm";
 
+
+import Stockcard from "./components/StockPlansCard/Stockcard"
 import{
   HomepageAbout,
   Service,
@@ -58,6 +60,8 @@ function App() {
           <Route path="/about" element={<HomepageAbout />} />
         <Route path="/services" element={<Service />} />
         <Route path="/contact" element={<HomepageInfo />} />
+
+        <Route path="/Stockcard" element={<Stockcard />} />
 
         
           <Route element={<BaseLayout />}>

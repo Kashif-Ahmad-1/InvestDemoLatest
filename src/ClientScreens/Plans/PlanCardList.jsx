@@ -3,6 +3,7 @@ import { Range } from 'react-range';
 import PlanCard from './FlipingCard';
 import '../Plans/Plans.css';
 import { Link } from 'react-router-dom';
+import ProfileCard from './../../components/StockPlansCard/Backup';
 
 const PlanCardList = ({ plans }) => {
   const [filteredPlans, setFilteredPlans] = useState(plans);

@@ -4,8 +4,17 @@
 
 @layer base{
   body {
-    background-color: #14161b;
+    background-color: #ffffff;
+    
+    /* color: black; */
+   
   }
+  h2{
+    font-size: 2rem;
+    font-weight: bold;
+    
+  }
+  
 }
 
 .slick-slide > div {
@@ -14,4 +23,7 @@
 
 .slick-dots li.slick-active button:before {
   color:orange !important;
+}
+.slick-track{
+  display: contents;
 }

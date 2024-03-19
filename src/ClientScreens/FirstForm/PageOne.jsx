@@ -72,6 +72,7 @@ const PageOne = ({ formData, handleChange }) => {
             value={formData.email}
             className="form-control"
             disabled
+      
           />
         </div>
         <div className='question-container'>

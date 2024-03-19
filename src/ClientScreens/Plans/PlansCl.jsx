@@ -4,6 +4,8 @@ import PlanCardList from './PlanCardList';
 // import plansData from './plans.json';
 import "../Plans/Plans.css";
 import React, { useState, useEffect } from 'react';
+import Stockcard from './../../components/StockPlansCard/Stockcard'
+import Backup from './../../components/StockPlansCard/Backup'
 
 function PlansCl() {
 
@@ -40,12 +42,19 @@ function PlansCl() {
     }, []);
   return (
     <>
+    
+    
+    
+  
+   
+    
       <Arraay plans={plansData} />
       <br/>
       <hr/>
       <br/>
       <h2 style={{marginBottom:"1rem"}}>Explore Plans</h2>
       <PlanCardList plans={plansData} />
+      
     </>
   );
 }
