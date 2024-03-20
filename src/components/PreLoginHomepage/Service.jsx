@@ -4,7 +4,7 @@ import s2 from './../../assest/images/s2.png'
 import s3 from './../../assest/images/s3.png'
 function Service(){
     return(
-        <section className="service_section layout_padding">
+        <section id="services" className="service_section layout_padding">
         <div className="service_container">
           <div className="container d-flex flex-column flex-wrap">
             <div className="heading_container heading_center">

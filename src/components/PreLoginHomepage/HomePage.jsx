@@ -15,7 +15,7 @@ import NavBar from "./NavBar";
 import './../PreLoginHomepage/css/bootstrap.css'
 import 'font-awesome/css/font-awesome.min.css'
 import './../PreLoginHomepage/css/responsive.css';
-// import './../PreLoginHomepage/css/style.css.map';
+import './../PreLoginHomepage/css/style.css.map';
 import './../PreLoginHomepage/css/style.css';
 import './../PreLoginHomepage/css/style.scss';
 import "/node_modules/bootstrap/dist/js/bootstrap";
@@ -32,10 +32,10 @@ function HomePage(){
             
             <NavBar />
             <Service />
-            <HomepageAbout />
+            <HomepageAbout  />
             <HomepageWhy />
             <HomepageTeam />
-            {/* <HomepageClient /> */}
+            
             <HomepageInfo />
             <Footer />
 

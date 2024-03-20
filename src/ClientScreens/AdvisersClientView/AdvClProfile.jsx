@@ -8,6 +8,7 @@ import dummy from './grapghup.png';
 import advidata from "./advi.json";
 import "../Plans/Plans.css";
 import { Link } from 'react-router-dom';
+import ProfileCard from '../Plans/ProfileCard';
 
 
 const responsive = {
@@ -60,7 +61,7 @@ function AdvClProfile() {
           {advisorPlans.map((plan, index) => (
             <div key={index}>
             <Link to={`/plan_id/${plan.plan_id}`}>
-            <PlanCard plan={plan} />
+            <ProfileCard plan={plan} />
             </Link>
             </div>
           ))}

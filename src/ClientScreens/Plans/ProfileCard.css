@@ -88,6 +88,11 @@
     justify-content: space-between;
     align-items: center
 }
+h2{
+   color: black !important;
+   font-weight: bold;
+   font-size: 2rem !important;
+}
 
 .rating {
     display: flex;
@@ -198,8 +203,9 @@
     color: #606060
 }
 
-.card-profile h4 {
+.card-profile h2 {
     margin-top: 10px
+    
 }
 
 .gender {

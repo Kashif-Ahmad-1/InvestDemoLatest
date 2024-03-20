@@ -1,34 +1,14 @@
 
-import AdvisorCard from './AdvisorCard';
-import Carousel from "react-multi-carousel";
+// import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from 'react-router-dom';
-// import "../Plans/Plans.css";
-import PremiumAdvisor from './../../components/AdvisorCardsPage/PremiumAdvisor'
-// import TestpageAdv from './../../components/AdvisorCardsPage/TestpageAdv'
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './../../components/AdvisorCardsPage/TestpageAdv.css'
 
-// const responsive = {
-//   superLargeDesktop: {
-//     breakpoint: { max: 4000, min: 3000 },
-//     items: 5
-//   },
-//   desktop: {
-//     breakpoint: { max: 3000, min: 1024 },
-//     items: 3
-//   },
-//   tablet: {
-//     breakpoint: { max: 1024, min: 464 },
-//     items: 2
-//   },
-//   mobile: {
-//     breakpoint: { max: 464, min: 0 },
-//     items: 1
-//   }
-// };
+
 const settings = {
       dots: true,
       infinite: true,
@@ -52,17 +32,18 @@ const AdvisorsCarousel = ({ advisors,advisor }) => {
       <Slider {...settings}>
         {associateAdvisors.map((advisor, index) => (
           <div key={index} className="bg-white h-[450px] text-black rounded-xl ">
-            <Link to={`/advisor_id/${advisor._id}`}>
+           
             <div className='h-56 bg-indigo-500 flex justify-center items-center  rounded-t-xl'>
               <img src="https://avatar.iran.liara.run/public/boy" alt="" className="h-44 w-44 rounded-full"/>
              </div>
 
             <div className="flex flex-col items-center justify-center gap-4 p-4">
               <p className="text-xl font-semibold">{advisor.name}</p>
-              {/* <p className="text-center">{d.review}</p> */}
+              <Link to={`/advisor_id/${advisor._id}`}>
                <button className='bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl'>Open Profile</button>
+               </Link>
              </div>
-             </Link>
+            
            </div>
         ))}
       </Slider>
@@ -78,7 +59,7 @@ const AdvisorsCarousel = ({ advisors,advisor }) => {
       <Slider {...settings}>
         {advanceAdvisors.map((advisor, index) => (
           <div key={index} className="bg-white h-[450px] text-black rounded-xl ">
-            <Link to={`/advisor_id/${advisor._id}`}>
+           
             <div className='h-56 bg-indigo-500 flex justify-center items-center  rounded-t-xl'>
               <img src="https://avatar.iran.liara.run/public/boy" alt="" className="h-44 w-44 rounded-full"/>
              </div>
@@ -86,9 +67,11 @@ const AdvisorsCarousel = ({ advisors,advisor }) => {
             <div className="flex flex-col items-center justify-center gap-4 p-4">
               <p className="text-xl font-semibold">{advisor.name}</p>
               {/* <p className="text-center">{d.review}</p> */}
+              <Link to={`/advisor_id/${advisor._id}`}>
                <button className='bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl'>Open Profile</button>
+               </Link>
              </div>
-             </Link>
+             
            </div>
         ))}
       </Slider>
@@ -104,7 +87,7 @@ const AdvisorsCarousel = ({ advisors,advisor }) => {
       <Slider {...settings}>
         {expertAdvisors.map((advisor, index) => (
           <div key={index} className="bg-white h-[450px] text-black rounded-xl">
-            <Link to={`/advisor_id/${advisor._id}`}>
+            
             <div className='h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl'>
               <img src="https://avatar.iran.liara.run/public/boy" alt="" className="h-44 w-44 rounded-full"/>
              </div>
@@ -112,9 +95,11 @@ const AdvisorsCarousel = ({ advisors,advisor }) => {
             <div className="flex flex-col items-center justify-center gap-4 p-4">
               <p className="text-xl font-semibold">{advisor.name}</p>
               {/* <p className="text-center">{d.review}</p> */}
+              <Link to={`/advisor_id/${advisor._id}`}>
                <button className='bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl'>Open Profile</button>
+               </Link>
              </div>
-             </Link>
+            
            </div>
         ))}
       </Slider>
@@ -130,8 +115,7 @@ const AdvisorsCarousel = ({ advisors,advisor }) => {
 export default AdvisorsCarousel;
 
 
-
-{/* <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000}>
+/* <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000}>
         {expertAdvisors.map((advisor, index) => (
           <div key={index}>
             <Link to={`/advisor_id/${advisor._id}`}>
@@ -142,7 +126,7 @@ export default AdvisorsCarousel;
             </Link>
           </div>
         ))}
-      </Carousel> */}
+      </Carousel> 
 
 
 
@@ -173,3 +157,4 @@ export default AdvisorsCarousel;
       //     </div>
       //   ))}
       // </Carousel>
+      */

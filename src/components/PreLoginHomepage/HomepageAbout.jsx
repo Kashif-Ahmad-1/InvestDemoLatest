@@ -2,7 +2,8 @@
 import aboutimg from './../../assest/images/aboutimg.png';
 import "./css/style.css";
 function HomepageAbout() {
-  return (<section className="about_section layout_padding">
+  return (
+  <section id="about" className="about_section layout_padding">
 
     <div className="container my-custom-container d-flex flex-column flex-wrap bg-#00204a ">
       <div className="my-custom-container">

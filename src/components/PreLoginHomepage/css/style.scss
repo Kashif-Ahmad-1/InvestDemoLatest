@@ -171,8 +171,8 @@ a:focus {
   .navbar-nav {
     margin-left: auto;
 
-    .nav-item {
-      .nav-link {
+    .nav-item-1 {
+      .nav-link-1 {
         padding: 5px 20px;
         color: $white;
         text-align: center;
@@ -183,13 +183,13 @@ a:focus {
 
       &:hover,
       &.active {
-        .nav-link {
+        .nav-link-1 {
           color: $primary1;
         }
       }
 
       &.active {
-        .nav-link {
+        .nav-link-1 {
           font-weight: 600;
         }
       }
@@ -756,7 +756,7 @@ a:focus {
       border: none;
       border-bottom: 1px solid $white;
       background-color: transparent;
-      width: 100%;
+      width: 100% !important;
       height: 45px;
       color: $white;
       outline: none;

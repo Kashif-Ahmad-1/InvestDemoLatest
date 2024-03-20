@@ -75,3 +75,7 @@ const PiChart = ({ data, title }) => {
 
 export default PiChart;
 
+
+
+
+

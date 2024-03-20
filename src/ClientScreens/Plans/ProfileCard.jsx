@@ -1,14 +1,8 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+import './ProfileCard.css'
 
-import './Backup.css'
-
-const ProfileCard = ({plan}) => {
-
-   
-
- 
-   
-
+const ProfileCard = ({ plan }) => {
     return (
         <>
             <div className="container-profile">
@@ -20,34 +14,38 @@ const ProfileCard = ({plan}) => {
                             <span></span>
                             <span></span>
                         </div>
-                        
+
                     </div>
                     <div className="image">
                         <img src="https://imgur.com/VcypK5c.png" />
                     </div>
-                    <div className="vitamin">
-                        <h2>{plan.planName}</h2>
-                       
+                    <div className="vitamin" >
+                        <h2 >{plan.planName}</h2>
+
                     </div>
                     <div className="reviews">
-                        <p><strong>Min. Investment</strong><br/>{plan.minInvestmentAmount}</p>
-                       
+                        <p><strong style={{ color: "black", fontSize: "14px", fontWeight: "bold" }}>Min. Investment :</ strong>     {plan.minInvestmentAmount}</p>
+
                     </div>
                     <div className="reviews">
-                        <p><strong>Risk</strong><br/>{plan.risk}</p>
-                       
+                        <p><strong style={{ color: "black", fontSize: "14px" }}>Risk :</strong>         {plan.risk}</p>
+
                     </div>
                     <div className="size">
-                        <p>👥<br/>{plan.noOfSubscription}</p>
-                        
+                        <p style={{ color: "black", fontSize: "14px" }}>👥  :              {plan.noOfSubscription}</p>
+
                     </div>
                     <div className="buttons">
-                        <button>Open</button>
-                        
-                    </div>
-                    
+                        <button>
+                            <Link to={`/plan_id/${plan._id}`} style={{ display: 'block', width: '100%', height: '100%',margin: '4px 4px 4px -4px' }}>
+                                Open
+                            </Link>
+                        </button>
 
-                    
+                    </div>
+
+
+
                 </div>
             </div>
 

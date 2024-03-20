@@ -3,7 +3,7 @@ import { Range } from 'react-range';
 import PlanCard from './FlipingCard';
 import '../Plans/Plans.css';
 import { Link } from 'react-router-dom';
-import ProfileCard from './../../components/StockPlansCard/Backup';
+import ProfileCard from './ProfileCard';
 
 const PlanCardList = ({ plans }) => {
   const [filteredPlans, setFilteredPlans] = useState(plans);
@@ -158,7 +158,7 @@ const PlanCardList = ({ plans }) => {
         {sortPlans().map((plan, index) => (
           <div key={index} style={{ width: '33%', padding: '10px' }}>
             <Link to={`/plan_id/${plan._id}`}>
-              <PlanCard plan={plan} />
+              <ProfileCard plan={plan} />
             </Link>
           </div>
         ))}

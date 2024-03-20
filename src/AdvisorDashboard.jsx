@@ -1,7 +1,4 @@
-import { useContext, useEffect } from "react";
 import "./App.scss";
-import { ThemeContext } from "./context/ThemeContext";
-import { DARK_THEME, LIGHT_THEME } from "./constants/themeConstants";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MoonIcon from "./assets/icons/moon.svg";
 import SunIcon from "./assets/icons/sun.svg";
@@ -10,19 +7,13 @@ import ClBaseLayout from "./layout/ClBaseLayout";
 import { Dashboard } from "./screens";
 import Clientlist from "./components/dashboard/client/clientlist";
 import Plans from "./components/dashboard/plans/plans";
-
-// import HomePage from "./components/PreLoginHomepage/HomePage" 
 import Loginpage from './components/SignIn/Loginpage';
-
 import Registerpage from "./components/SignIn/Registerpage";
 import UserDetails from "./checking/UserDetails";
 import AddPlan from "./components/dashboard/plans/AddPlan";
-
 import AdNewPlans from "./components/dashboard/plans/AdNewPlans";
-
 import ProfilePage from "./ClientScreens/Profilepage/Profilepage";
 import DashboardClient from "./ClientScreens/DashBoard/Dashboard";
-import LandingPage from "./ClientScreens/LandingPage/LandingPage";
 import PlansCl from "./ClientScreens/Plans/PlansCl";
 import AdvClView from "./ClientScreens/AdvisersClientView/AdvClView";
 import AdvClProfile from "./ClientScreens/AdvisersClientView/AdvClProfile";
@@ -30,7 +21,10 @@ import PlanView from "./ClientScreens/Plans/PlanView";
 import MultiStepForm from "./ClientScreens/FirstForm/MultiStepForm";
 
 
-import Stockcard from "./components/StockPlansCard/Stockcard"
+
+
+
+
 import{
   HomepageAbout,
   Service,
@@ -39,16 +33,7 @@ import{
 } from './components';
 
 function App() {
-  const { theme, toggleTheme } = useContext(ThemeContext);
-
-  // adding dark-mode class if the dark mode is set on to the body tag
-  useEffect(() => {
-    if (theme === DARK_THEME) {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
-  }, [theme]);
+ 
 
   return (
     <>
@@ -61,7 +46,9 @@ function App() {
         <Route path="/services" element={<Service />} />
         <Route path="/contact" element={<HomepageInfo />} />
 
-        <Route path="/Stockcard" element={<Stockcard />} />
+
+        
+        
 
         
           <Route element={<BaseLayout />}>

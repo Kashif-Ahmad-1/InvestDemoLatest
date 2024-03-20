@@ -105,7 +105,7 @@ function InvestmentSummary({ transactions, returns }) {
             <hr/>
 
 
-                <center><h3>Plan Information:</h3></center>
+                <center><h3 style={{color:"black", fontSize:"30px", fontWeight: "bold"}}>Plan Information:</h3></center>
 
 
                 <PlanTable uniquePlans={Array.from(new Set(transactions.map(transaction => transaction.planId)))} totalInvestments={totalInvestments} />

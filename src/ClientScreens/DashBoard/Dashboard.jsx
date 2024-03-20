@@ -45,7 +45,7 @@ function DashboardCl() {
     }, []);
 return (
         <div className="App">
-          <center><h1> Portfolio Summary</h1></center>
+          <center><h1 style={{color:"black", fontSize:"30px", fontWeight: "bold"}}> Portfolio Summary</h1></center>
         
             {/* <center><h1> Portfolio Summary</h1></center> */}
             <InvestmentSummary transactions={transactions} returns={returns}/>

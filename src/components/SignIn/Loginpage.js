@@ -68,7 +68,7 @@ const Loginpage = () => {
   return (
     <div className='register-container'>
      <div className='register-left'>
-        <img src='https://us.123rf.com/450wm/topvector/topvector2209/topvector220900965/192918408-financial-advisor-giving-advice-investment-money-market-analysis-management-planning-for-customer.jpg?ver=6'></img>
+        <img src='https://us.123rf.com/450wm/topvector/topvector2209/topvector220900965/192918408-financial-advisor-giving-advice-investment-money-market-analysis-management-planning-for-customer.jpg?ver=6' alt=''></img>
       </div>
     <div className='register-right'>
        <h2> Welcome Back</h2>

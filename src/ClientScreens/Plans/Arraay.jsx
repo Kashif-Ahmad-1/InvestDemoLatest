@@ -5,9 +5,10 @@ import 'react-multi-carousel/lib/styles.css';
 import '../Profilepage/style.css';
 import "../Plans/Plans.css";
 import { Link } from 'react-router-dom';
-import StockCard from './../../components/StockPlansCard/Stockcard'
 
-import ProfileCard from './../../components/StockPlansCard/Backup';
+
+import ProfileCard from './ProfileCard';
+
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -38,9 +39,9 @@ const Arraay = ({ plans }) => {
       <Carousel responsive={responsive} infinite={true} style={{}} >
         {topRatedPlans.map((plan, index) => (
           <div key={index}>
-            <Link to={`/plan_id/${plan._id}`}>
+            <Link to={`/plan_id/${plan._id}`}></Link>
             <ProfileCard plan={plan} />
-            </Link>
+            
           </div>
         ))}
         
@@ -51,7 +52,7 @@ const Arraay = ({ plans }) => {
         {mostOrderedPlans.map((plan, index) => (
           <div key={index}>
             <Link to={`/plan_id/${plan._id}`}>
-            {/* <Backup plan={plan} /> */}
+            
             <ProfileCard plan={plan} />
             </Link>
           </div>
